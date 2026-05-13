@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name" translatable="false">SukiSU Ultra</string>
+    <string name="app_name" translatable="false">SukiSU Ultra-Ai</string>
     <string name="home">Home</string>
     <string name="home_not_installed">Not installed</string>
     <string name="home_click_to_install">Click to install</string>
@@ -571,4 +571,74 @@
     <string name="icon_switch_summary">Change the launcher icon to KernelSU\'s icon</string>
     <string name="refresh">Refresh</string>
     <string name="home_kernel_full_version">Kernel full version</string>
+
+    <!-- AI Assistant -->
+    <string name="settings_ai_assistant">AI Assistant</string>
+    <string name="settings_ai_assistant_summary">Reverse engineer apps and generate KPM modules with AI</string>
+    <string name="ai_assistant_title">AI Assistant</string>
+    <string name="ai_assistant_config_title">AI Provider</string>
+    <string name="ai_assistant_disclaimer">AI output is for reference only. Review all generated code before building or loading. Never load untrusted KPMs into a kernel.</string>
+    <string name="ai_assistant_empty_hint">Describe what you want to analyze or build. You can attach an installed app or an APK file as context.</string>
+    <string name="ai_assistant_input_hint">Describe your target and goal…</string>
+    <string name="ai_assistant_send">Send</string>
+    <string name="ai_assistant_stop">Stop</string>
+    <string name="ai_assistant_new_chat">New chat</string>
+    <string name="ai_assistant_clear_chat">Clear</string>
+    <string name="ai_assistant_attach_apk">Attach APK</string>
+    <string name="ai_assistant_attach_installed_app">Attach installed app</string>
+    <string name="ai_assistant_attach_apk_file">Attach APK file</string>
+    <string name="ai_assistant_attached">Attached: %1$s</string>
+    <string name="ai_assistant_detach">Remove attachment</string>
+    <string name="ai_assistant_mode">Mode</string>
+    <string name="ai_assistant_mode_analyze">Reverse analysis</string>
+    <string name="ai_assistant_mode_generate">Generate KPM</string>
+    <string name="ai_assistant_mode_freeform">Free chat</string>
+    <string name="ai_assistant_configure_first">Configure an AI provider before starting</string>
+    <string name="ai_assistant_no_key">API key is not set</string>
+    <string name="ai_assistant_error">AI request failed: %1$s</string>
+    <string name="ai_assistant_thinking">Thinking…</string>
+    <string name="ai_assistant_export_kpm">Export KPM project</string>
+    <string name="ai_assistant_export_success">KPM project exported to %1$s</string>
+    <string name="ai_assistant_export_failed">Export failed</string>
+    <string name="ai_assistant_no_generated_kpm">No KPM project found in the latest reply</string>
+    <string name="ai_assistant_copy_code">Copy code</string>
+    <string name="ai_assistant_copied">Copied to clipboard</string>
+    <string name="ai_assistant_role_user">You</string>
+    <string name="ai_assistant_role_assistant">Assistant</string>
+    <string name="ai_assistant_role_system" translatable="false">System</string>
+
+    <!-- AI Provider Config -->
+    <string name="ai_provider">Provider</string>
+    <string name="ai_provider_openai" translatable="false">OpenAI compatible</string>
+    <string name="ai_provider_anthropic" translatable="false">Anthropic Claude</string>
+    <string name="ai_provider_gemini" translatable="false">Google Gemini</string>
+    <string name="ai_provider_ollama" translatable="false">Ollama</string>
+    <string name="ai_provider_base_url">Base URL</string>
+    <string name="ai_provider_api_key">API Key</string>
+    <string name="ai_provider_api_key_hint">Leave empty for local providers such as Ollama</string>
+    <string name="ai_provider_model">Model</string>
+    <string name="ai_provider_model_hint">e.g. gpt-4o-mini, claude-3-5-sonnet-latest, gemini-2.0-flash</string>
+    <string name="ai_provider_temperature">Temperature</string>
+    <string name="ai_provider_max_tokens">Max output tokens</string>
+    <string name="ai_provider_system_prompt">Extra system prompt (optional)</string>
+    <string name="ai_provider_test">Test connection</string>
+    <string name="ai_provider_test_ok">Provider is reachable</string>
+    <string name="ai_provider_test_fail">Connection failed: %1$s</string>
+    <string name="ai_provider_save">Save</string>
+    <string name="ai_provider_saved">Saved</string>
+    <string name="ai_provider_timeout">Timeout (seconds)</string>
+
+    <!-- AI Attachment -->
+    <string name="ai_attachment_target_app">Target app</string>
+    <string name="ai_attachment_package">Package</string>
+    <string name="ai_attachment_version">Version</string>
+    <string name="ai_attachment_min_sdk">Min SDK</string>
+    <string name="ai_attachment_target_sdk">Target SDK</string>
+    <string name="ai_attachment_permissions">Permissions (%1$d)</string>
+    <string name="ai_attachment_activities">Activities (%1$d)</string>
+    <string name="ai_attachment_services">Services (%1$d)</string>
+    <string name="ai_attachment_receivers">Receivers (%1$d)</string>
+    <string name="ai_attachment_native_libs">Native libs</string>
+    <string name="ai_attachment_analyzing">Analyzing APK…</string>
+    <string name="ai_attachment_invalid">Could not read APK info</string>
 </resources>

@@ -14,6 +14,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.Article
 import androidx.compose.material.icons.automirrored.filled.KeyboardArrowRight
 import androidx.compose.material.icons.filled.Adb
+import androidx.compose.material.icons.filled.AutoAwesome
 import androidx.compose.material.icons.filled.BugReport
 import androidx.compose.material.icons.filled.ContactPage
 import androidx.compose.material.icons.filled.Delete
@@ -189,6 +190,25 @@ fun SettingPagerMaterial(
                             headlineContent = { Text(toolsTitle) },
                             supportingContent = { Text(stringResource(id = R.string.settings_tools_summary)) },
                             leadingContent = { Icon(Icons.Filled.Fence, toolsTitle) },
+                            trailingContent = {
+                                Icon(
+                                    Icons.AutoMirrored.Filled.KeyboardArrowRight,
+                                    null
+                                )
+                            }
+                        )
+                    }
+                )
+
+                val aiTitle = stringResource(id = R.string.settings_ai_assistant)
+                SegmentedColumn(
+                    modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp),
+                    content = listOf {
+                        SegmentedListItem(
+                            onClick = actions.onOpenAiAssistant,
+                            headlineContent = { Text(aiTitle) },
+                            supportingContent = { Text(stringResource(id = R.string.settings_ai_assistant_summary)) },
+                            leadingContent = { Icon(Icons.Filled.AutoAwesome, aiTitle) },
                             trailingContent = {
                                 Icon(
                                     Icons.AutoMirrored.Filled.KeyboardArrowRight,

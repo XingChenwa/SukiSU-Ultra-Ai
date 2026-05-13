@@ -17,6 +17,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.rounded.Article
 import androidx.compose.material.icons.rounded.Adb
 import androidx.compose.material.icons.rounded.Android
+import androidx.compose.material.icons.rounded.AutoAwesome
 import androidx.compose.material.icons.rounded.BugReport
 import androidx.compose.material.icons.rounded.Code
 import androidx.compose.material.icons.rounded.ContactPage
@@ -235,6 +236,29 @@ fun SettingPagerMiuix(
                                 },
                                 onClick = {
                                     actions.onOpenTools()
+                                }
+                            )
+                        }
+
+                        val aiTitle = stringResource(id = R.string.settings_ai_assistant)
+                        Card(
+                            modifier = Modifier
+                                .padding(top = 12.dp)
+                                .fillMaxWidth()
+                        ) {
+                            ArrowPreference(
+                                title = aiTitle,
+                                summary = stringResource(id = R.string.settings_ai_assistant_summary),
+                                startAction = {
+                                    Icon(
+                                        Icons.Rounded.AutoAwesome,
+                                        modifier = Modifier.padding(end = 6.dp),
+                                        contentDescription = aiTitle,
+                                        tint = colorScheme.onBackground
+                                    )
+                                },
+                                onClick = {
+                                    actions.onOpenAiAssistant()
                                 }
                             )
                         }

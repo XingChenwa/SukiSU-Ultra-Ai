@@ -542,4 +542,69 @@
     <string name="icon_switch_summary">更换为 KernelSU 图标</string>
     <string name="refresh">刷新</string>
     <string name="home_kernel_full_version">内核完整版本</string>
+
+    <!-- AI 助手 -->
+    <string name="settings_ai_assistant">AI 助手</string>
+    <string name="settings_ai_assistant_summary">用 AI 辅助逆向应用并生成 KPM 内核模块</string>
+    <string name="ai_assistant_title">AI 助手</string>
+    <string name="ai_assistant_config_title">AI 提供商</string>
+    <string name="ai_assistant_disclaimer">AI 输出仅供参考。编译或加载前请务必人工审阅生成的代码，切勿把来源不明的 KPM 加载进内核。</string>
+    <string name="ai_assistant_empty_hint">描述你想分析或构建的内容，也可以附上已安装的应用或 APK 文件作为上下文。</string>
+    <string name="ai_assistant_input_hint">描述你的目标与需求…</string>
+    <string name="ai_assistant_send">发送</string>
+    <string name="ai_assistant_stop">停止</string>
+    <string name="ai_assistant_new_chat">新对话</string>
+    <string name="ai_assistant_clear_chat">清空</string>
+    <string name="ai_assistant_attach_apk">附加 APK</string>
+    <string name="ai_assistant_attach_installed_app">附加已安装应用</string>
+    <string name="ai_assistant_attach_apk_file">附加 APK 文件</string>
+    <string name="ai_assistant_attached">已附加：%1$s</string>
+    <string name="ai_assistant_detach">移除附件</string>
+    <string name="ai_assistant_mode">模式</string>
+    <string name="ai_assistant_mode_analyze">逆向分析</string>
+    <string name="ai_assistant_mode_generate">生成 KPM</string>
+    <string name="ai_assistant_mode_freeform">自由聊天</string>
+    <string name="ai_assistant_configure_first">请先配置一个 AI 提供商</string>
+    <string name="ai_assistant_no_key">未配置 API Key</string>
+    <string name="ai_assistant_error">AI 请求失败：%1$s</string>
+    <string name="ai_assistant_thinking">正在思考…</string>
+    <string name="ai_assistant_export_kpm">导出 KPM 工程</string>
+    <string name="ai_assistant_export_success">KPM 工程已导出至 %1$s</string>
+    <string name="ai_assistant_export_failed">导出失败</string>
+    <string name="ai_assistant_no_generated_kpm">最近一条回复中未检测到 KPM 工程</string>
+    <string name="ai_assistant_copy_code">复制代码</string>
+    <string name="ai_assistant_copied">已复制到剪贴板</string>
+    <string name="ai_assistant_role_user">你</string>
+    <string name="ai_assistant_role_assistant">助手</string>
+
+    <!-- AI 提供商配置 -->
+    <string name="ai_provider">提供商</string>
+    <string name="ai_provider_base_url">Base URL</string>
+    <string name="ai_provider_api_key">API Key</string>
+    <string name="ai_provider_api_key_hint">本地提供商（如 Ollama）可留空</string>
+    <string name="ai_provider_model">模型</string>
+    <string name="ai_provider_model_hint">例：gpt-4o-mini、claude-3-5-sonnet-latest、gemini-2.0-flash</string>
+    <string name="ai_provider_temperature">Temperature</string>
+    <string name="ai_provider_max_tokens">最大输出 token</string>
+    <string name="ai_provider_system_prompt">附加 system prompt（可选）</string>
+    <string name="ai_provider_test">测试连接</string>
+    <string name="ai_provider_test_ok">连接成功</string>
+    <string name="ai_provider_test_fail">连接失败：%1$s</string>
+    <string name="ai_provider_save">保存</string>
+    <string name="ai_provider_saved">已保存</string>
+    <string name="ai_provider_timeout">超时（秒）</string>
+
+    <!-- AI 附件 -->
+    <string name="ai_attachment_target_app">目标应用</string>
+    <string name="ai_attachment_package">包名</string>
+    <string name="ai_attachment_version">版本</string>
+    <string name="ai_attachment_min_sdk">最低 SDK</string>
+    <string name="ai_attachment_target_sdk">目标 SDK</string>
+    <string name="ai_attachment_permissions">权限（%1$d）</string>
+    <string name="ai_attachment_activities">Activity（%1$d）</string>
+    <string name="ai_attachment_services">Service（%1$d）</string>
+    <string name="ai_attachment_receivers">Receiver（%1$d）</string>
+    <string name="ai_attachment_native_libs">Native 库</string>
+    <string name="ai_attachment_analyzing">正在解析 APK…</string>
+    <string name="ai_attachment_invalid">无法读取 APK 信息</string>
 </resources>

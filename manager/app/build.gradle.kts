@@ -116,6 +116,7 @@ android {
     ndkVersion = androidCompileNdkVersion
 
     defaultConfig {
+        applicationId = "com.sukisu.ultra.ai"
         minSdk = androidMinSdkVersion
         targetSdk = androidTargetSdkVersion
         versionCode = managerVersionCode
@@ -155,7 +156,7 @@ androidComponents {
 
 base {
     archivesName.set(
-        "SukiSU_${managerVersionName}_${managerVersionCode}"
+        "SukiSU-Ai_${managerVersionName}_${managerVersionCode}"
     )
 }
 
